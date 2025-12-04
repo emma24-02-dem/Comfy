@@ -1,0 +1,43 @@
+.baner {
+  position: relative;
+  min-height: 440px;
+  max-height: 440px;
+  width: 744px;
+  max-width: 744px;
+  width: auto;
+  display: grid;
+  height: 100px;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  img {
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.banner-arrow-left {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  padding: 1rem;
+  background: white;
+}
+
+.banner-arrow-right {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  padding: 1rem;
+  background: white;
+}

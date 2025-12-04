@@ -1,0 +1,242 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+
+.header-undercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+
+  select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1.2rem;
+    background: var(--background);
+    color: var(--grey);
+  }
+
+  button {
+    font-weight: 400;
+    gap: 0.4rem;
+  }
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header-link {
+  color: var(--grey);
+  font-size: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--green);
+  }
+}
+
+.header-right-phone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--red);
+  font-size: 0.75rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.header-logo-catalogue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-catalogue {
+  gap: 0.5rem;
+  color: white;
+  padding: 5px 1rem 5px 1rem;
+  border-radius: 0.8rem;
+  background-color: var(--green);
+  font-size: 1rem;
+  transition: background-color 0.3s;
+
+  margin-right: 1rem;
+
+  &:hover {
+    background: var(--green-dark);
+  }
+}
+
+.header-search {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.header-search-input {
+  position: relative;
+  min-width: 0px;
+  width: 100%;
+  border: 2px solid var(--green);
+  padding: 1rem 9rem 1rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  height: 3rem;
+}
+
+.header-search-button {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px;
+  height: 100%;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--green);
+  border-radius: 0rem 0.8rem 0.8rem 0rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--green-dark);
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.button-nav {
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  &:hover {
+    color: var(--green);
+  }
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: #f2f2f2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  transition: all 0.2s linear;
+  padding: 1rem;
+
+  &:hover {
+    color: var(--green-dark);
+  }
+}
+
+.help-menu {
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background-color: white;
+  min-height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  gap: 1rem;
+
+  animation: scale 0.3s ease-in-out;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+  bottom: 0;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 152px;
+  max-width: 152px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+  background: white;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+    background: rgb(234, 234, 234);
+  }
+}
+
+.separator {
+  width: 1px;
+  height: 24px;
+  background: rgb(99, 99, 99);
+  margin: 0 1rem;
+}
